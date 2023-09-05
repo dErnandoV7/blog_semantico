@@ -57,6 +57,9 @@ nav {
     padding: 2rem 3rem;
     display: flex;
     gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid gray;
 }
 
 /* conteudo principal */
@@ -130,11 +133,6 @@ form input[type="submit"] {
     background: #e0dce0ff;
     padding: 10px;
     border-radius: 4px;
-}
-
-/* fim do container */
-.container {
-    border-bottom: 1px solid gray;
 }
 
 /* rodapé */
