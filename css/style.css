@@ -1,0 +1,168 @@
+/* geral */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    transition: .3s;
+}
+
+input:focus {
+    outline: none;
+}
+
+a:hover {
+    color: #262626;
+}
+
+ul {
+    list-style: none;
+}
+
+.container-b {
+    width: 1200px;
+}
+
+/* cabeçalho */
+header {
+    border-bottom: 2px solid gray;
+}
+
+nav {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-itens {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-itens ul {
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+}
+
+/* containers */
+.container {
+    padding: 2rem 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+/* conteudo principal */
+.main-container {
+    flex: 3 1 0;
+}
+
+.main-container .post img {
+    width: 100%;
+    margin: .6rem 0;
+}
+
+.post .description,
+.post .title,
+.post .autor,
+.post .ler_mais {
+    margin-bottom: 20px;
+}
+
+/* aside */
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    gap: 1rem;
+}
+
+.search,
+.categorias,
+.tags {
+    border: 1px solid gray;
+    padding: 1.5rem;
+}
+
+.search h2,
+.categorias h2,
+.tags h2 {
+    margin-bottom: 1rem;
+}
+
+.search form {
+    display: flex;
+}
+
+.search input {
+    padding: 8px 15px;
+}
+
+form input[type="submit"] {
+    background: #36a1f7ff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.categorias ul {
+    padding-top: 10px;
+}
+
+.categorias ul li {
+    margin-bottom: 1rem;
+}
+
+.tags div {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+}
+
+.tags div a {
+    background: #e0dce0ff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* fim do container */
+.container {
+    border-bottom: 1px solid gray;
+}
+
+/* rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+footer h2,
+footer p {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: gray;
+}
+
+/* responsivo */
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .main-container,
+    aside {
+        width: 100%;
+    }
+}
