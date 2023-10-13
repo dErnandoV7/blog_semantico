@@ -165,3 +165,10 @@ footer p {
         width: 100%;
     }
 }
+
+@media  (max-width: 300px){
+    .search form {
+        display: flex;
+        flex-direction: column;
+    }
+}
